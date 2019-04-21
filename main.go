@@ -46,7 +46,7 @@ func main() {
 
 	messageBody := mail.BuildMessage()
 
-	smtpServer := SmtpServer{host: "smtp.gmail.com", port: "465"}
+	smtpServer := SmtpServer{host: "smtp.qqmail.com", port: "465"}
 	log.Println(smtpServer.host)
 
 	auth := smtp.PlainAuth("", mail.senderId, "password", smtpServer.host)
